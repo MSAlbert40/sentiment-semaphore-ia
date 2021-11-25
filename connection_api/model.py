@@ -10,7 +10,7 @@ import pickle
 class Model:
     def __init__(self):
 
-        self.model = keras.models.load_model('cnn_model3')
+        self.model = keras.models.load_model('cnn_model')
 
         self.max_sequence_length = 50
 
