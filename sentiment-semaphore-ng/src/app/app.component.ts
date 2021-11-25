@@ -62,7 +62,9 @@ export class AppComponent implements OnInit{
   }
 
   convertString(percentName: string) {
-    var percent = percentName.substr(0, 4)
+    var percent
+    if (percentName.length == 6) percent = percentName.substr(0, 5)
+    else if (percentName.length == 5) percent = percentName.substr(0, 4)
 
     var newPercent = new String(percent + " " + "%")
     return newPercent
