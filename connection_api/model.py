@@ -10,11 +10,11 @@ import pickle
 class Model:
     def __init__(self):
 
-        self.model = keras.models.load_model('cnn_model3')
+        self.model = keras.models.load_model('cnn_model_1')
 
         self.max_sequence_length = 50
 
-        with open('tokenizer3.pickle', 'rb') as handle:
+        with open('tokenizer.pickle', 'rb') as handle:
             tokenizer = pickle.load(handle)
 
         self.tokenizer = tokenizer
