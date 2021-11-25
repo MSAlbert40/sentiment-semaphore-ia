@@ -1,4 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.head {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .logo {
+    width: 25vh;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.body {
+    width: 100%;
+    height: calc(100% - 25vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .content {
+    width: 55%;
+    height: 100%;
+}
+
+.content .text {
+    height: auto;
+}
+
+.text p {
+    font-size: 2vh;
+    line-height : 25px;
+    text-align: justify;
+}
+
+.content .result {
+    height: auto;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.result h2 {
+    font-size: 3.7vh;
+    text-transform: uppercase;
+}
+
+.neutro {
+    background-color: #f89c21;
+}
+
+.positivo {
+    background-color: #7ccc3a;
+}
+
+.negativo {
+    background-color: #b62a33;
+}
+
+.content .form {
+    height: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form .inputs {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-label {
+    font-size: 2.2vh;
+}
+
+.size {
+    width: 28%;
+    margin-left: 20px;
+}
+
+.form .buttons {
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style {
+    height: 5vh;
+    font-size: 2.1vh;
+    color: white;
+    background-color: #0069d9;
+}
+
+.content .table {
+    height: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    background-color: white;
+    height: 5.5vh;
+}
+
+.mat-header-cell {
+    font-size: 1.9vh;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(27, 25, 27);
+}
+  
+.mat-cell {
+    font-size: 1.7vh;
+    text-transform: lowercase;
+}
+
+.mat-cell:first-letter {
+    text-transform: capitalize;
+}
+
+.content .empty {
+    height: 10%;
+}
+
+.first {
+    width: 76%;
+}
+
+.second {
+    width: 12%;
+}
